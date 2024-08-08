@@ -1,6 +1,11 @@
 {% extends 'app_main/index.html' %}
 {% block content %}
 
+<div class="head-section">
+    <div>
+        <h1>Hello {{request.user|title}} </h1>
+        <h3>You have <strong>{{count}}</strong> incomplete todo{{ count|pluralize:"s" }}</h3>
+    </div>
 {% if request.user.is_authenticated %}
     <p>Welcome {{request.user}}</p>
     <form method="post" action="{% url 'logout' %}">
@@ -11,15 +16,30 @@
     <a href="{% url 'login' %}">Login</a>
     <a href="">Register</a>
 {% endif %}
-<p>{{request.user}}</p>
+</div>
 
-<hr>
-<h1>My To Do List</h1>
-<a href="{% url 'task-create' %}">Add Task</a>
+<!-- <a href="{% url 'task-create' %}">Add Task</a>
 <form method="GET">
     <input type="text" name="search-area" value="{{search_input}}"> 
     <input type="submit" value="Search">
-</form>
+</form> -->
+
+<div class="to-do-items-wrapper">
+    {% for task in tasks %}
+        <div class="to-do-wrapper">
+            {% if task.complete %}
+                <div class="to-do-title">
+                    <div class="to-do-complete"></div>
+                    <i><s><a href="{% url 'task-update' task.id %}">{{task}}</a></s></i>
+                </div>
+                {% endif %}
+            </div>
+    {% empty %}
+        <h3>No items in list</h3>
+    {% endfor %}
+
+</div>
+
 <table>
     <tr>
         <th>Item</th>
