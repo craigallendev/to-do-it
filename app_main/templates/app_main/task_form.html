@@ -5,9 +5,16 @@
 
 <a href="{% url 'tasks' %}">Go Back</a>
 <form method="POST" action="">
+    <div class="head-section">
+        <a href="{% url 'tasks' %}">&#8592; Back</a>
+    </div>
+    
+    <div class="form-wrapper">
+        <form method="POST" action="">
     {% csrf_token %}
     {{form.as_p}}
-    <input type="submit" value="Submit">
+    <input class="button" type="submit" value="Submit">
 </form>
+</div>
 
 {% endblock content %}
