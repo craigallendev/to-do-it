@@ -1,10 +1,8 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import ListView
+from .models import Task
 
 # Create your views here.
 
-class HomePage(TemplateView): 
-    """
-    Displays home page"
-    """
-    template_name = 'index.html'
+class TaskList(ListView):
+    model = Task
