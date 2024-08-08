@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
@@ -31,12 +31,17 @@ class RegisterPage(FormView):
         if user is not None:
             login(self.request, user)
         return super(RegisterPage, self).form_valid(form)
+
+    def get(self, *view_args, **view_kwargs):
+        if self.request.user.is_authenticated:
+            return render(self.request, 'app_main/tasks.html')
+        return super(RegisterPage, self).get(*view_args, **view_kwargs)
 class TaskList(LoginRequiredMixin, ListView):
     model = Task
     context_object_name = 'tasks'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+    def get_context_data(self, **context_kwargs):
+        context = super().get_context_data(**context_kwargs)
         context['tasks'] = context['tasks'].filter(user=self.request.user)
         context['count'] = context['tasks'].filter(complete=False).count()
         return context
