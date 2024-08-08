@@ -1,3 +1,6 @@
+{% extends 'app_main/index.html' %}
+{% block content %}
+
 {% if request.user.is_authenticated %}
     <p>Welcome {{request.user}}</p>
     <form method="post" action="{% url 'logout' %}">
@@ -34,3 +37,5 @@
         <h3>No items in list</h3>
     {% endfor %}
 </table>
+
+{% endblock content %}
