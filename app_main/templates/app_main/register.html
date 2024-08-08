@@ -1,15 +1,10 @@
-{% extends 'app_main/index.htmll' %}
+{% extends 'app_main/index.html' %}
 {% block content %}
 
-<div class="head-section">
+<div class="header-section">
     <h1>Register</h1>
 </div>
 
-<form method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" value="Register">
-</form>
 <div class="form-body">
     <form method="POST">
         {% csrf_token %}
@@ -21,7 +16,7 @@
         {{form.password2}}
         <input class="button" type="submit" value="Register">
     </form>
-
+    
     <p>Already have an account? <a href="{% url 'login' %}">Login</a></p> 
 </div>
 
