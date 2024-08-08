@@ -19,6 +19,18 @@ class CustomLoginView(LoginView):
 
     def get_success_url(self):
         return reverse_lazy('tasks')
+
+class RegisterPage(FormView):
+    template_name = 'app_main/register.html'
+    form_class = UserCreationForm
+    redirect_authenticated_user = True
+    success_url = reverse_lazy('tasks')
+
+    def form_valid(self, form):
+        user = form.save()
+        if user is not None:
+            login(self.request, user)
+        return super(RegisterPage, self).form_valid(form)
 class TaskList(LoginRequiredMixin, ListView):
     model = Task
     context_object_name = 'tasks'
