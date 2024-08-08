@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
+from django.views import View
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
@@ -59,7 +60,7 @@ class TaskDetail(LoginRequiredMixin, DetailView):
 
 class TaskCreate(LoginRequiredMixin, CreateView):
     model = Task
-    fields = 'title', 'description', 'complete', 'category'
+    fields = 'title', 'description', 'complete', 'category', 'priority'
     success_url = reverse_lazy('tasks')
 
     def form_valid(self, form):
@@ -68,7 +69,7 @@ class TaskCreate(LoginRequiredMixin, CreateView):
 
 class TaskUpdate(LoginRequiredMixin, UpdateView):
     model = Task
-    fields = 'title', 'description', 'complete', 'category'
+    fields = 'title', 'description', 'complete', 'category', 'priority'
     success_url = reverse_lazy('tasks')
 
 class DeleteView(LoginRequiredMixin, DeleteView):
@@ -76,3 +77,10 @@ class DeleteView(LoginRequiredMixin, DeleteView):
     context_object_name = 'task'
     success_url = reverse_lazy('tasks')
     template_name = 'app_main/task_delete.html'
+
+class ToggleTaskCompleteView(View):
+    def post(self, request, pk, *args, **kwargs):
+        task = get_object_or_404(Task, pk=pk, user=request.user)
+        task.complete = not task.complete
+        task.save()
+        return redirect('tasks')

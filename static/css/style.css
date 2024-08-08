@@ -45,7 +45,8 @@ nav {
 
 .head-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     padding: 10px;
     border-radius: 5px 5px 0 0;

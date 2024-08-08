@@ -20,6 +20,12 @@ class Task(models.Model):
             ('daily routine', 'Daily Routine'),
             ('other', 'Other'),
     ], blank='True')
+    priority = models.CharField(max_length=50,
+        choices=[
+            ('high', 'High'),
+            ('medium', 'Medium'),
+            ('low', 'Low'),
+    ], blank=True)
     
 
     def __str__(self):
