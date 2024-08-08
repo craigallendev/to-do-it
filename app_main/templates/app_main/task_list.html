@@ -1,9 +1,9 @@
 {% extends 'app_main/index.html' %}
 {% block content %}
 
-<div class="header-bar ">
+<div class="head-section ">
     <div>
-        <h1>Hello {{request.user|title}} </h1>
+        <h1>Welcome {{request.user|title}} time to-do-it </h1>
         <div id="search-add-wrapper">
             <form class="search-form" method="GET">
                 <input type="text" name="search-area" value="{{search_input}}">
@@ -13,15 +13,6 @@
         </div>
         <h3>You have <strong>{{count}}</strong> incomplete todo{{ count|pluralize:"s" }}</h3>
     </div>
-    <!-- {% if request.user.is_authenticated %}
-    <form method="POST" action="{% url 'logout' %}">
-        {% csrf_token %}
-        <button class="button" type="submit">Logout</button>
-    </form>
-    {% else %}
-    <a href="{% url 'login' %}">Login</a>
-    <a href="">Register</a>
-    {% endif %} -->
 </div>
 
 
@@ -33,7 +24,7 @@
             <h2>To-Do</h2>
             {% for task in tasks %}
             {% if not task.complete %}
-            <div class="to-do-wrapper">
+            <div class="to-do-section">
                 <div class="to-do-title">
                     <!-- <div class="to-do-incomplete"></div> -->
                     <a href="{% url 'task-update' task.id %}">{{ task.title }}</a>
@@ -72,7 +63,7 @@
             <h2>Done Tasks</h2>
             {% for task in tasks %}
             {% if task.complete %}
-            <div class="to-do-wrapper">
+            <div class="to-do-section">
                 <div class="to-do-title">
                     <!-- <div class="to-do-complete"></div> -->
                     <s><a href="{% url 'task-update' task.id %}">{{task}}</a></s>
