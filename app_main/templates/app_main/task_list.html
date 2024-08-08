@@ -32,13 +32,17 @@
         <div class="col-md-6">
             <h2>To-Do</h2>
             {% for task in tasks %}
-                {% if not task.complete %}
-                    <div class="to-do-section">
-                        <div class="to-do-title">
-                            <div class="to-do-incomplete"></div>
-                            <a href="{% url 'task-update' task.id %}">{{ task.title }}</a> 
-                            <span class="task-category">{{ task.get_category_display }}</span>
-                        </div>
+            {% if not task.complete %}
+            <div class="to-do-section">
+                <div class="to-do-title">
+                    <div class="to-do-incomplete"></div>
+                    <a href="{% url 'task-update' task.id %}">{{ task.title }}</a>
+                    {% if task.category %}
+                    <span class="task-category">
+                        <i class="fa {% if task.category == 'work' %}fa-briefcase{% elif task.category == 'personal' %}fa-user{% elif task.category == 'shopping' %}fa-shopping-cart{% elif task.category == 'chore' %}fa-broom{% elif task.category == 'study' %}fa-book{% elif task.category == 'event' %}fa-calendar{% elif task.category == 'fitness' %}fa-dumbbell{% elif task.category == 'daily routine' %}fa-clock{% else %}fa-tag{% endif %}"></i>
+                    </span>
+                {% endif %}
+                    </div>
                         <a class="delete-button" href="{% url 'task-delete' task.id %}">&#215</a>
                     </div>
                 {% endif %}
@@ -51,15 +55,15 @@
             <div class="col-md-6">
                 <h2>Done</h2>
                 {% for task in tasks %}
-                    {% if task.complete %}
-                        <div class="to-do-section">
-                            <div class="to-do-title">
-                                <div class="to-do-complete"></div>
-                                <s><a href="{% url 'task-update' task.id %}">{{task}}</a></s>
-                            </div>
-                            <a class="delete-button" href="{% url 'task-delete' task.id %}">&#215</a>
-                        </div>
-                    {% endif %}
+                {% if task.complete %}
+                <div class="to-do-section">
+                    <div class="to-do-title">
+                        <div class="to-do-complete"></div>
+                        <s><a href="{% url 'task-update' task.id %}">{{task}}</a></s>
+                    </div>
+                    <a class="delete-button" href="{% url 'task-delete' task.id %}">&#215</a>
+                </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
