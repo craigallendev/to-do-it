@@ -1,3 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    font-family: "Noto Sans Mono", Arial, sans-serif;
+    background-color: blue;
+}
+
 h1 {
     color: red;
 }
