@@ -36,7 +36,8 @@
                     <div class="to-do-section">
                         <div class="to-do-title">
                             <div class="to-do-incomplete"></div>
-                            <a href="{% url 'task-update' task.id %}">{{task}}</a>
+                            <a href="{% url 'task-update' task.id %}">{{ task.title }}</a> 
+                            <span class="task-category">{{ task.get_category_display }}</span>
                         </div>
                         <a class="delete-button" href="{% url 'task-delete' task.id %}">&#215</a>
                     </div>
