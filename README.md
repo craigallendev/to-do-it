@@ -36,6 +36,12 @@ Clear path of what to build.
 Conclusion
 The low-fidelity wireframes created in Figma played a crucial role in shaping the project’s design and ensuring a user-centered approach. They served as a tool for guiding the development process and contributed to a well-organized and intuitive application.
 
+<img src="https://github.com/user-attachments/assets/6e99f3e5-62c0-4a32-ac0d-de2c51e4a81c" width="400" height="auto" alt="Wireframe Screenshot 1" />
+<img src="https://github.com/user-attachments/assets/fdb37801-ca3b-4864-ae7a-c508c5ad4f8e" width="400" height="auto" alt="Wireframe Screenshot 2" />
+<img src="https://github.com/user-attachments/assets/b897f948-826c-4cd7-966e-1de047847b25" width="400" height="auto" alt="Wireframe Screenshot 3" />
+
+
+
 ## Features 
 
 ## Navigation Bar: 
