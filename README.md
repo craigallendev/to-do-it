@@ -78,16 +78,22 @@ Targeted at individuals, professionals, and students who need a reliable system 
 To-Do-It has been tested across multiple browsers, including Chrome, Firefox, Safari, and Edge, to ensure consistent performance and appearance. Additionally, the app has been tested on various screen sizes and devices, from desktops and laptops to tablets and smartphones, to confirm that the responsive design works as expected. Key considerations include:
 
 - Responsive Layout: Ensured that all elements adjust correctly and maintain usability across different screen sizes.
-Browser Compatibility: Verified that all functionalities work seamlessly across different browsers, addressing any discrepancies in appearance or performance.
-Testing Methodology
-W3C Validation: Used the W3C HTML and CSS validation services to check for any syntax errors. All identified issues were corrected to ensure that the code is standards-compliant and error-free.
-Automated Tests: Implemented automated tests for specific views, such as the CustomLoginView, to ensure that login functionality is working as expected.
-Manual Testing: Conducted extensive manual testing by interacting with the site, exploring different user flows, and checking edge cases to ensure that all features are functioning correctly.
-Known Issues and Bugs
+-Browser Compatibility: Verified that all functionalities work seamlessly across different browsers, addressing any discrepancies in appearance or performance.
+
+## Testing Methodology
+- W3C Validation: Used the W3C HTML and CSS validation services to check for any syntax errors. All identified issues were corrected to ensure that the code is standards-compliant and error-free.
+  
+- Automated Tests: Implemented a automated test for the CustomLoginView, to ensure that login functionality is working as expected.
+  
+- Manual Testing: Conducted extensive manual testing by interacting with the site, exploring different user flows, and checking to ensure that all features are functioning correctly.
+
+## Known Issues and Bugs
 
 - Responsive Design Adjustment: Although the app is generally responsive, there are some edge cases where elements might display suboptimally on very small screens. Further adjustments will be made to improve the experience on all devices.
-Future Testing and Improvements
-Ongoing testing will continue to focus on resolving known issues. Future updates will include additional automated tests and further refinements to ensure the app remains robust and user-friendly.
+  
+## Future Testing and Improvements
+
+- Ongoing testing will continue to focus on resolving known issues. Future updates will include additional automated tests and further refinements to ensure the app remains robust and user-friendly.
 
 
 ### Validator Testing 
@@ -96,6 +102,33 @@ Ongoing testing will continue to focus on resolving known issues. Future updates
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+- A new repository was created on github
+    
+## Deployment to Heroku
+### Create a Heroku Application:
+
+- Log in to your Heroku account.
+Click on the New button and select Create New App.
+Enter a unique name for your app and choose the region closest to your user base.
+Link GitHub Repository to Heroku:
+
+- In the Heroku dashboard for your app, go to the Deploy tab.
+Choose GitHub as the deployment method.
+Search for and connect your GitHub repository to Heroku.
+Deploy the Application:
+
+- Once your repository is linked, you can deploy your application by selecting the branch you want to deploy from and clicking Deploy Branch.
+Heroku will build and deploy your application, and you will see logs indicating the deployment process.
+
+### Verify Deployment:
+- After deployment, Heroku provides a URL where your application is live.
+Visit this URL to ensure that the application is running as expected.
+
+The live link can be found here - https://to-do-it-project-5434f63ab691.herokuapp.com/login/?next=/
 
 
 
