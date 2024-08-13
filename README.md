@@ -44,7 +44,9 @@ Targeted at individuals, professionals, and students who need a reliable system 
 
 <img src="https://github.com/user-attachments/assets/bbfbb3fc-62ab-4680-b045-95654260270f" alt="Screenshot 2024-08-13 at 19 58 54" width="400" height="auto">
 
-<img src="https://github.com/user-attachments/assets/9bc32dd6-0786-438a-8645-d5f104f28086" alt="Screenshot 2024-08-13 at 20 07 15" width="400" height="auto">
+<img src="https://github.com/user-attachments/assets/62843580-8c16-466a-bc25-261efd5c0a72" alt="Screenshot 2024-08-13 at 20 07 24" width="400" height="auto">
+
+
 
 
 ### Future Features
