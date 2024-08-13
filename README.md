@@ -6,6 +6,42 @@ Targeted at individuals, professionals, and students who need a reliable system 
 
 ![Screenshot 2024-08-13 at 19 25 55](https://github.com/user-attachments/assets/5adbcc72-980f-4530-a0fd-e45df771d20a)
 
+## Wireframes
+To lay the groundwork for the project, I utilized Figma to create low-fidelity wireframes. These wireframes were essential in visualizing the layout, structure, and user flow of the application before diving into the actual development.
+
+### Figma for Wireframing
+- Tool Used: Figma
+- Type of Wireframes: Low-Fidelity
+
+The primary purpose of the low-fidelity wireframes was to:
+
+Define Layouts: Establish the basic structure of each page, including the arrangement of elements such as headers, navigation bars, content sections, and footers.
+Outline User Flow: Visualize the user journey through the application, ensuring that navigation and interactions are intuitive and logical.
+Identify Key Features: Highlight the core functionalities and components of the application, such as the task management interface, search functionality, and user authentication processes.
+Process
+Sketch Initial Concepts:
+
+Started by sketching initial ideas on paper to outline the fundamental layout and features.
+Create Wireframes in Figma:
+
+Transitioned to Figma to create digital versions of these sketches.
+Designed wireframes for key pages including the task list, task form and login, and the footer with social links.
+
+Benefits
+Using low-fidelity wireframes in Figma provided several benefits:
+
+Early Visualization: Enabled early visualization of the application’s layout and functionality, facilitating better planning and design.
+Clear path of what to build.
+
+Conclusion
+The low-fidelity wireframes created in Figma played a crucial role in shaping the project’s design and ensuring a user-centered approach. They served as a tool for guiding the development process and contributed to a well-organized and intuitive application.
+
+<img src="https://github.com/user-attachments/assets/6e99f3e5-62c0-4a32-ac0d-de2c51e4a81c" width="400" height="auto" alt="Wireframe Screenshot 1" />
+<img src="https://github.com/user-attachments/assets/fdb37801-ca3b-4864-ae7a-c508c5ad4f8e" width="400" height="auto" alt="Wireframe Screenshot 2" />
+<img src="https://github.com/user-attachments/assets/b897f948-826c-4cd7-966e-1de047847b25" width="400" height="auto" alt="Wireframe Screenshot 3" />
+
+
+
 ## Features 
 
 ## Navigation Bar: 
@@ -56,7 +92,17 @@ Targeted at individuals, professionals, and students who need a reliable system 
 - Enhanced Login Page: The login process will be improved with a more comprehensive sign-in page that includes fields for email, first and last name, and an option to recover forgotten passwords. This added functionality will provide a more secure and user-friendly way for users to access their accounts, ensuring their data remains protected.
 
 - Due Date for To-Dos: A date-to-complete feature will be added to tasks, allowing users to set deadlines for their to-dos. This will help users manage their time more effectively by not only organizing tasks by priority but also by when they need to be completed. This feature will be particularly useful for users who need to stay on track with deadlines and ensure timely completion of their tasks.
+- 
+## Technologies Used
 
+- Frontend: HTML, CSS, BootStrap, JavaScript, Django
+  
+- Backend: Django, Python 
+
+- Database: PostgreSQL
+  
+- Hosting: Github and Heroku
+  
 ## Testing 
 
 ## Feature Testing
@@ -78,16 +124,27 @@ Targeted at individuals, professionals, and students who need a reliable system 
 To-Do-It has been tested across multiple browsers, including Chrome, Firefox, Safari, and Edge, to ensure consistent performance and appearance. Additionally, the app has been tested on various screen sizes and devices, from desktops and laptops to tablets and smartphones, to confirm that the responsive design works as expected. Key considerations include:
 
 - Responsive Layout: Ensured that all elements adjust correctly and maintain usability across different screen sizes.
-Browser Compatibility: Verified that all functionalities work seamlessly across different browsers, addressing any discrepancies in appearance or performance.
-Testing Methodology
-W3C Validation: Used the W3C HTML and CSS validation services to check for any syntax errors. All identified issues were corrected to ensure that the code is standards-compliant and error-free.
-Automated Tests: Implemented automated tests for specific views, such as the CustomLoginView, to ensure that login functionality is working as expected.
-Manual Testing: Conducted extensive manual testing by interacting with the site, exploring different user flows, and checking edge cases to ensure that all features are functioning correctly.
-Known Issues and Bugs
+-Browser Compatibility: Verified that all functionalities work seamlessly across different browsers, addressing any discrepancies in appearance or performance.
+
+## Testing Methodology
+- W3C Validation: Used the W3C HTML and CSS validation services to check for any syntax errors. All identified issues were corrected to ensure that the code is standards-compliant and error-free.
+
+<img src="https://github.com/user-attachments/assets/528b4468-a880-4647-a459-6004e43d9d2f" width="500" height="auto" alt="Testing Screenshot 1" />
+<img src="https://github.com/user-attachments/assets/33964809-053a-4cfa-a129-53cf9e6786c4" width="500" height="auto" alt="Testing Screenshot 2" />
+
+- Automated Tests: Implemented a automated test for the CustomLoginView, to ensure that login functionality is working as expected.
+
+![Screenshot 2024-08-13 at 23 12 03](https://github.com/user-attachments/assets/4f64c8a2-550d-4992-b773-c0168650a087)
+
+- Manual Testing: Conducted extensive manual testing by interacting with the site, exploring different user flows, and checking to ensure that all features are functioning correctly.
+
+## Known Issues and Bugs
 
 - Responsive Design Adjustment: Although the app is generally responsive, there are some edge cases where elements might display suboptimally on very small screens. Further adjustments will be made to improve the experience on all devices.
-Future Testing and Improvements
-Ongoing testing will continue to focus on resolving known issues. Future updates will include additional automated tests and further refinements to ensure the app remains robust and user-friendly.
+  
+## Future Testing and Improvements
+
+- Ongoing testing will continue to focus on resolving known issues. Future updates will include additional automated tests and further refinements to ensure the app remains robust and user-friendly.
 
 
 ### Validator Testing 
@@ -97,7 +154,36 @@ Ongoing testing will continue to focus on resolving known issues. Future updates
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
 
+## Deployment
 
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+- A new repository was created on github
+    
+## Deployment to Heroku
+### Create a Heroku Application:
+
+- Log in to your Heroku account.
+Click on the New button and select Create New App.
+Enter a unique name for your app and choose the region closest to your user base.
+Link GitHub Repository to Heroku:
+
+- In the Heroku dashboard for your app, go to the Deploy tab.
+Choose GitHub as the deployment method.
+Search for and connect your GitHub repository to Heroku.
+Deploy the Application:
+
+- Once your repository is linked, you can deploy your application by selecting the branch you want to deploy from and clicking Deploy Branch.
+Heroku will build and deploy your application, and you will see logs indicating the deployment process.
+
+### Verify Deployment:
+- After deployment, Heroku provides a URL where your application is live.
+Visit this URL to ensure that the application is running as expected.
+
+The live link can be found here - https://to-do-it-project-5434f63ab691.herokuapp.com/login/?next=/
+
+## Credits 
+
+Robson Vinicius https://codepen.io/robsonvinicius/pen/bGpKQrw I used this source code for my footer icons adjusted to match my site style.
 
 
 
