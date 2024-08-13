@@ -42,7 +42,7 @@ Targeted at individuals, professionals, and students who need a reliable system 
 
 <img src="https://github.com/user-attachments/assets/498f2378-9099-423c-8238-caacdebe029e" alt="Screenshot 2024-08-13 at 19 58 54" width="400" height="auto">
 
-<img src="https://github.com/user-attachments/assets/bbfbb3fc-62ab-4680-b045-95654260270f" alt="Screenshot 2024-08-13 at 19 58 54" width="400" height="auto">
+<img src="https://github.com/user-attachments/assets/5544c378-0f88-455b-a506-7a8a632e96c0" alt="Screenshot 2024-08-13 at 20 07 15" width="400" height="auto">
 
 <img src="https://github.com/user-attachments/assets/62843580-8c16-466a-bc25-261efd5c0a72" alt="Screenshot 2024-08-13 at 20 07 24" width="400" height="auto">
 
