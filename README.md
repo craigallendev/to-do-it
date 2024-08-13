@@ -128,9 +128,14 @@ To-Do-It has been tested across multiple browsers, including Chrome, Firefox, Sa
 
 ## Testing Methodology
 - W3C Validation: Used the W3C HTML and CSS validation services to check for any syntax errors. All identified issues were corrected to ensure that the code is standards-compliant and error-free.
-  
+
+<img src="https://github.com/user-attachments/assets/528b4468-a880-4647-a459-6004e43d9d2f" width="400" alt="Testing Screenshot 1" />
+<img src="https://github.com/user-attachments/assets/33964809-053a-4cfa-a129-53cf9e6786c4" width="400" alt="Testing Screenshot 2" />
+
 - Automated Tests: Implemented a automated test for the CustomLoginView, to ensure that login functionality is working as expected.
-  
+
+![Screenshot 2024-08-13 at 23 12 03](https://github.com/user-attachments/assets/4f64c8a2-550d-4992-b773-c0168650a087)
+
 - Manual Testing: Conducted extensive manual testing by interacting with the site, exploring different user flows, and checking to ensure that all features are functioning correctly.
 
 ## Known Issues and Bugs
