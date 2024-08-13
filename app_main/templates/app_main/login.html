@@ -2,20 +2,29 @@
 {% block content %}
 
 <div class="form-body">
-    <div>
+
+    <!-- Header with title and subtitle -->
+    <header>
         <h1>Welcome to To-Do-It</h1>
-    </div>
-    <div>
-        <h2>Your new to do list organiser</h3>
-    </div>
-<h2>Login</h2>
-    </div>
+        <h2>Your new to-do list organizer</h2>
+    </header>
+    
+    <!-- Login form -->
+    <section>
+        <h2>Login</h2>
         <form method="POST">
             {% csrf_token %}
-            {{form.as_p}}
-            <input class="button" type="submit" value="Login">
+
+            <!-- Display form  -->
+            {{ form.as_p }}
+
+            <!-- Submit button -->
+            <button type="submit" class="button">Login</button>
         </form>
-    <p>Dont have an account? <a id="register-link" href="{% url 'register' %}">Register</a></p>
+        
+        <!-- Link to registration page for users who don’t have an account -->
+        <p>Don't have an account? <a id="register-link" href="{% url 'register' %}">Register</a></p>
+    </section>
 </div>
 
 {% endblock content %}

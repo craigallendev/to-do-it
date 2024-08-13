@@ -1,14 +1,23 @@
-{% extends 'app_main/index.html' %}
-{% block content %}
+{% extends 'app_main/index.html' %} {% block content %}
 
-<form method="POST">
-    <div class="head-section"><a class="button" href="{% url 'tasks' %}">Go Back</a></div>
-
-<div class="form-body d-flex flex-column">
-    <form method="POST">
-    {% csrf_token %}
-    <p class="text-center">Are you sure you want to delete this task? "{{task}}" </p>
-    <input class="button text-center" type="submit" value="Delete">
-</form>
+<!-- Back link section -->
+<div class="head-section">
+  <a class="button" href="{% url 'tasks' %}">Go Back</a>
 </div>
+
+<!-- Confirmation form -->
+<div class="form-body d-flex flex-column">
+  <form method="POST">
+    {% csrf_token %}
+
+    <!-- Confirmation message -->
+    <p class="text-center">
+      Are you sure you want to delete this task? "{{task}}"
+    </p>
+
+    <!-- Delete button -->
+    <input class="button text-center" type="submit" value="Delete" />
+  </form>
+</div>
+
 {% endblock content %}

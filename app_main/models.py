@@ -16,7 +16,7 @@ class Task(models.Model):
             ('study', 'Study'),
             ('event', 'Event'),
             ('fitness', 'Fitness'),
-            ('daily routine', 'Daily Routine'),
+            ('daily_routine', 'Daily Routine'),
             ('other', 'Other'),
     ], blank='True')
     priority = models.CharField(max_length=50,

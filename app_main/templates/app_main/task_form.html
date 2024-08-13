@@ -1,18 +1,29 @@
 {% extends 'app_main/index.html' %}
 {% block content %}
 
+<!-- Main container for the task form -->
 <div class="container mt-5">
-    <h3 class="text-center">
-        Task Form
-    </h3>
+
+     <!-- Form title -->
+    <h3 class="text-center mb-4">Task Form</h3>
+
+    <!-- Back link section -->
     <div class="head-section mb-4">
         <a href="{% url 'tasks' %}" class="button">Back</a>
     </div>
+
+    <!-- Form container -->
     <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
+
+            <!-- Task form -->
             <form method="POST" action="">
                 {% csrf_token %}
+
+                <!-- Form fields as paragraphs -->
                 {{ form.as_p }}
+                
+                <!-- Submit button -->
                 <div class="d-grid">
                     <input class="button" type="submit" value="Submit">
                 </div>

@@ -4,19 +4,50 @@
 <div class="head-section">
     <h1>Register</h1>
 </div>
-
 <div class="form-body">
-    <form method="POST">
+    <form method="POST" novalidate>
         {% csrf_token %}
-        <label>{{form.username.label}}</label>
-        {{form.username}}
-        <label>{{form.password1.label}}</label>
-        {{form.password1}}
-        <label>{{form.password2.label}}</label>
-        {{form.password2}}
-        <input class="button" type="submit" value="Register">
-    </form>
-    
+        
+        <!-- Username Field -->
+        <div>
+            <label for="{{ form.username.id_for_label }}">{{ form.username.label }}</label>
+            {{ form.username }}
+            {% if form.username.errors %}
+                <div>
+                    {% for error in form.username.errors %}
+                        <p class="error">{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        
+        <!-- Password1 Field -->
+        <div>
+            <label for="{{ form.password1.id_for_label }}">{{ form.password1.label }}</label>
+            {{ form.password1 }}
+            {% if form.password1.errors %}
+                <div>
+                    {% for error in form.password1.errors %}
+                        <p class="error">{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        
+        <!-- Password2 Field -->
+        <div>
+            <label for="{{ form.password2.id_for_label }}">{{ form.password2.label }}</label>
+            {{ form.password2 }}
+            {% if form.password2.errors %}
+                <div>
+                    {% for error in form.password2.errors %}
+                        <p class="error">{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    <button class="button" type="submit">Register</button>
+</form>
     <p>Already have an account? <a id="login-link" href="{% url 'login' %}">Login</a></p> 
 </div>
 

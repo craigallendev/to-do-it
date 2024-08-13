@@ -10,9 +10,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 from .models import Task
 
-
-# Create your views here.
-
 class CustomLoginView(LoginView):
     template_name = 'app_main/login.html'
     fields = '__all__'
