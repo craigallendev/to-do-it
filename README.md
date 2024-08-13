@@ -6,6 +6,36 @@ Targeted at individuals, professionals, and students who need a reliable system 
 
 ![Screenshot 2024-08-13 at 19 25 55](https://github.com/user-attachments/assets/5adbcc72-980f-4530-a0fd-e45df771d20a)
 
+## Wireframes
+To lay the groundwork for the project, I utilized Figma to create low-fidelity wireframes. These wireframes were essential in visualizing the layout, structure, and user flow of the application before diving into the actual development.
+
+### Figma for Wireframing
+- Tool Used: Figma
+- Type of Wireframes: Low-Fidelity
+
+The primary purpose of the low-fidelity wireframes was to:
+
+Define Layouts: Establish the basic structure of each page, including the arrangement of elements such as headers, navigation bars, content sections, and footers.
+Outline User Flow: Visualize the user journey through the application, ensuring that navigation and interactions are intuitive and logical.
+Identify Key Features: Highlight the core functionalities and components of the application, such as the task management interface, search functionality, and user authentication processes.
+Process
+Sketch Initial Concepts:
+
+Started by sketching initial ideas on paper to outline the fundamental layout and features.
+Create Wireframes in Figma:
+
+Transitioned to Figma to create digital versions of these sketches.
+Designed wireframes for key pages including the task list, task form and login, and the footer with social links.
+
+Benefits
+Using low-fidelity wireframes in Figma provided several benefits:
+
+Early Visualization: Enabled early visualization of the application’s layout and functionality, facilitating better planning and design.
+Clear path of what to build.
+
+Conclusion
+The low-fidelity wireframes created in Figma played a crucial role in shaping the project’s design and ensuring a user-centered approach. They served as a tool for guiding the development process and contributed to a well-organized and intuitive application.
+
 ## Features 
 
 ## Navigation Bar: 
