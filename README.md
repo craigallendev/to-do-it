@@ -56,7 +56,17 @@ Targeted at individuals, professionals, and students who need a reliable system 
 - Enhanced Login Page: The login process will be improved with a more comprehensive sign-in page that includes fields for email, first and last name, and an option to recover forgotten passwords. This added functionality will provide a more secure and user-friendly way for users to access their accounts, ensuring their data remains protected.
 
 - Due Date for To-Dos: A date-to-complete feature will be added to tasks, allowing users to set deadlines for their to-dos. This will help users manage their time more effectively by not only organizing tasks by priority but also by when they need to be completed. This feature will be particularly useful for users who need to stay on track with deadlines and ensure timely completion of their tasks.
+- 
+## Technologies Used
 
+- Frontend: HTML, CSS, BootStrap, JavaScript, Django
+  
+- Backend: Django, Python 
+
+- Database: PostgreSQL
+  
+- Hosting: Github and Heroku
+  
 ## Testing 
 
 ## Feature Testing
