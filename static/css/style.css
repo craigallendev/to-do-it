@@ -1,3 +1,4 @@
+/* styles for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* General body styling */
 body {
     font-family: "Noto Sans Mono", sans-serif;
     color: #212529;
@@ -16,21 +18,24 @@ body {
     min-height: 100vh;
 }
 
+/* Heading styles */
+h1, h2 {
+    color: #d6c7f4;
+    text-align: center;
+}
+
 h1 {
     font-size: 1.8rem;
     margin-bottom: 0.1rem;
-    color: #d6c7f4;
-    text-align: center;
 }
 
 h2 {
     font-size: 1.3rem;
     margin-bottom: 0.1rem;
-    color: #d6c7f4;
-    text-align: center;
     padding: 0.3rem;
 }
 
+/* Link styling */
 a {
     color: #212529;
 }
@@ -40,6 +45,7 @@ a {
     color:#d6c7f4
 }
 
+/* Paragraph styling */
 p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -48,6 +54,7 @@ p {
     text-decoration: none;
 }
 
+/* Navigation styling */
 nav {
     display: flex;
     justify-content: space-between;
@@ -58,11 +65,13 @@ nav {
     border-radius: 0 0 40px 40px;
 }
 
+/* Logo styling */
 .logo {
     height: 3rem;
     width: 12.5rem;
 }
 
+/* Footer styling */
 footer {
     display: flex;
     justify-content: space-between;
@@ -75,6 +84,7 @@ footer {
     width: 100%;
 }
 
+/* Header section styling */
 .head-section {
     display: flex;
     justify-content: center;
@@ -82,6 +92,7 @@ footer {
     color: #fff;
 }
 
+/* Form styling */
 .form-body {
     width: 100%;
     max-width: 400px;
@@ -104,11 +115,22 @@ footer {
     padding-bottom: 3rem;
 }
 
+/* Button styling */
 .btn {
     margin: 0.2rem;
 }
 
-.to-do-section {
+.button {
+    background-color: #564471;
+    color: #d6c7f4;
+    border: 1px solid #d6c7f4;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+/* .to-do-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +148,7 @@ footer {
 .to-do-title a {
     text-decoration: none;
     color: #d6c7f4;
-}
+} */
 
 .task-priority {
     width: 60px;
@@ -137,25 +159,7 @@ footer {
     line-height: 0;
 }
 
-#add-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: green;
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px black;
-}
 
-.button {
-    background-color: #564471;
-    color: #d6c7f4;
-    border: 1px solid #d6c7f4;
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    cursor: pointer;
-}
 
 input[type="text"],
 input[type="password"],

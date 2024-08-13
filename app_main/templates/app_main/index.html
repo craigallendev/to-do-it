@@ -50,14 +50,6 @@
                         {% endif %}
                         {% if request.user.is_authenticated %}
                             <li class="nav-item">
-                                <form method="POST" action="{% url 'logout' %}">
-                                    {% csrf_token %}
-                                    <button class="btn" href="#">Logout</button>
-                                </form>
-                            </li>
-                        {% endif %}
-                        {% if request.user.is_authenticated %}
-                            <li class="nav-item">
                                 <a class="btn" href="{% url 'tasks' %}">To Do List</a>
                         {% endif %}
                         {% if not request.user.is_authenticated and not request.resolver_match.url_name == 'login' %}
@@ -65,13 +57,14 @@
                                 <a class="btn" href="{% url 'login' %}">Login</a>
                             </li>
                         {% endif %}
-                            <li class="nav-item">{% if request.user.is_authenticated %}
+                        {% if request.user.is_authenticated %}
+                            <li class="nav-item">
                                 <form method="POST" action="{% url 'logout' %}">
                                     {% csrf_token %}
-                                        <button class="btn" href="#">Logout</button>
+                                    <button class="btn">Logout</button>
                                 </form>
-                            {% endif %}
-                        </li>
+                            </li>
+                        {% endif %}
                      </ul>
                 </div>
             </div>
