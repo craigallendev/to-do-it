@@ -88,6 +88,10 @@ footer {
     width: 100%;
 }
 
+.footer-text {
+    color:#212529;
+}
+
 /* Header section styling */
 .head-section {
     display: flex;
