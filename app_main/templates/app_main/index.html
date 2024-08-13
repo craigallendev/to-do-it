@@ -27,7 +27,7 @@
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img class="logo" src="{% static 'images/logo.png' %}" alt="Logo">
+                    <img class="logo" src="{% static 'images/logo.png' %}" alt="To Do It Logo">
                 </a>
 
                 <!-- Toggler/collapsible Button -->
@@ -61,7 +61,7 @@
                             <li class="nav-item">
                                 <form method="POST" action="{% url 'logout' %}">
                                     {% csrf_token %}
-                                    <button class="btn">Logout</button>
+                                    <a class="btn">Logout</a>
                                 </form>
                             </li>
                         {% endif %}

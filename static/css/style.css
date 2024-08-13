@@ -9,7 +9,7 @@
 /* General body styling */
 body {
     font-family: "Noto Sans Mono", sans-serif;
-    color: #212529;
+    /* color: #212529; */
     background: #564471 !important; 
     background-size: cover; 
     display: flex;
@@ -33,6 +33,10 @@ h2 {
     font-size: 1.3rem;
     margin-bottom: 0.1rem;
     padding: 0.3rem;
+}
+
+h3 {
+    color: #d6c7f4;
 }
 
 /* Link styling */
@@ -130,26 +134,6 @@ footer {
     cursor: pointer;
 }
 
-/* .to-do-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #d6c7f4;
-    border-radius: 20px;
-    margin: 5px;
-}
-
-.to-do-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.to-do-title a {
-    text-decoration: none;
-    color: #d6c7f4;
-} */
-
 .task-priority {
     width: 60px;
 }
@@ -229,7 +213,7 @@ select:focus {
 }
 
 strong {
-    color: black;
+    color: red !important;
 }
 
 label {
