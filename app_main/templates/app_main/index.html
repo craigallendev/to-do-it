@@ -61,7 +61,7 @@
                             <li class="nav-item">
                                 <form method="POST" action="{% url 'logout' %}">
                                     {% csrf_token %}
-                                    <a class="btn">Logout</a>
+                                    <button type="submit" class="btn">Logout</button>
                                 </form>
                             </li>
                         {% endif %}
