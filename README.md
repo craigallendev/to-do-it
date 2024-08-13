@@ -38,10 +38,14 @@ Targeted at individuals, professionals, and students who need a reliable system 
 ## Add To-Do: 
 - The core feature of To-Do-It is the ability to add new tasks. Users can give each task a title and description, choose a category, and assign a priority level. This feature helps users to break down their goals into manageable steps, categorize them for clarity, and prioritize them to ensure the most important tasks get done first.
   
-![Screenshot 2024-08-13 at 19 58 45](https://github.com/user-attachments/assets/23f7be7c-c260-4db5-b2da-8d0091f17ed4)
-![Screenshot 2024-08-13 at 19 58 54](https://github.com/user-attachments/assets/498f2378-9099-423c-8238-caacdebe029e)
-![Screenshot 2024-08-13 at 19 58 54](https://github.com/user-attachments/assets/bbfbb3fc-62ab-4680-b045-95654260270f)
-![Screenshot 2024-08-13 at 20 07 15](https://github.com/user-attachments/assets/9bc32dd6-0786-438a-8645-d5f104f28086)
+<img src="https://github.com/user-attachments/assets/23f7be7c-c260-4db5-b2da-8d0091f17ed4" alt="Screenshot 2024-08-13 at 19 58 45" width="400" height="auto">
+
+<img src="https://github.com/user-attachments/assets/498f2378-9099-423c-8238-caacdebe029e" alt="Screenshot 2024-08-13 at 19 58 54" width="400" height="auto">
+
+<img src="https://github.com/user-attachments/assets/bbfbb3fc-62ab-4680-b045-95654260270f" alt="Screenshot 2024-08-13 at 19 58 54" width="400" height="auto">
+
+<img src="https://github.com/user-attachments/assets/9bc32dd6-0786-438a-8645-d5f104f28086" alt="Screenshot 2024-08-13 at 20 07 15" width="400" height="auto">
+
 
 ### Future Features
 
