@@ -1,18 +1,21 @@
 {% extends 'app_main/index.html' %}
 {% block content %}
 
-<div class="head-section">
-    <h1>Login</h1>
-</div>
-
 <div class="form-body">
-    <form method="POST">
-        {% csrf_token %}
-        {{form.as_p}}
-        <input class="button" type="submit" value="Login">
-    </form>
-    <p>Dont have an account? <a href="{% url 'register' %}">Register</a></p>
+    <div>
+        <h1>Welcome to To-Do-It</h1>
+    </div>
+    <div>
+        <h2>Your new to do list organiser</h3>
+    </div>
+<h2>Login</h2>
+    </div>
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input class="button" type="submit" value="Login">
+        </form>
+    <p>Dont have an account? <a id="register-link" href="{% url 'register' %}">Register</a></p>
 </div>
-
 
 {% endblock content %}
