@@ -129,8 +129,8 @@ To-Do-It has been tested across multiple browsers, including Chrome, Firefox, Sa
 ## Testing Methodology
 - W3C Validation: Used the W3C HTML and CSS validation services to check for any syntax errors. All identified issues were corrected to ensure that the code is standards-compliant and error-free.
 
-<img src="https://github.com/user-attachments/assets/528b4468-a880-4647-a459-6004e43d9d2f" width="400" alt="Testing Screenshot 1" />
-<img src="https://github.com/user-attachments/assets/33964809-053a-4cfa-a129-53cf9e6786c4" width="400" alt="Testing Screenshot 2" />
+<img src="https://github.com/user-attachments/assets/528b4468-a880-4647-a459-6004e43d9d2f" width="500" height="auto" alt="Testing Screenshot 1" />
+<img src="https://github.com/user-attachments/assets/33964809-053a-4cfa-a129-53cf9e6786c4" width="500" height="auto" alt="Testing Screenshot 2" />
 
 - Automated Tests: Implemented a automated test for the CustomLoginView, to ensure that login functionality is working as expected.
 
@@ -181,7 +181,9 @@ Visit this URL to ensure that the application is running as expected.
 
 The live link can be found here - https://to-do-it-project-5434f63ab691.herokuapp.com/login/?next=/
 
+## Credits 
 
+Robson Vinicius https://codepen.io/robsonvinicius/pen/bGpKQrw I used this source code for my footer icons adjusted to match my site style.
 
 
 
