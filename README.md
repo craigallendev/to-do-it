@@ -10,28 +10,34 @@ Targeted at individuals, professionals, and students who need a reliable system 
 
 ## Navigation Bar: 
 - The navigation bar provides users with easy access to different sections of the app, ensuring a smooth and intuitive user experience. Whether you’re logging in, registering, or navigating between your tasks, the navigation bar keeps everything just a click away, making task management more efficient.
+  
 ![Screenshot 2024-08-13 at 19 55 34](https://github.com/user-attachments/assets/492dc44b-4711-4d11-ab05-933bd0161240)
 ![Screenshot 2024-08-13 at 19 55 45](https://github.com/user-attachments/assets/2a03ff3f-e980-4864-b75c-8b7e658ae044)
 ![Screenshot 2024-08-13 at 19 55 52](https://github.com/user-attachments/assets/eee6070c-cabf-4fed-8f77-ba2c40ee0458)
 
  ## Search Task Bar: 
  - The search task bar allows users to quickly locate specific tasks within their to-do list. This feature is especially useful for users with a large number of tasks, enabling them to find and focus on what matters most without having to scroll through endless lists.
+   
 ![Screenshot 2024-08-13 at 19 56 52](https://github.com/user-attachments/assets/8ef12ed6-a3eb-4496-8f38-805bc1873671)
 
 ## Footer with Social Links: 
 - The footer includes links to social media platforms, allowing users to connect with the app’s community or share their productivity achievements.
+  
 ![Screenshot 2024-08-13 at 19 56 31](https://github.com/user-attachments/assets/f29d5d84-a2e6-4869-9e5e-e8bf46c36c6c)
 
 ## Login Page: 
 - The login page ensures that users’ task data is secure and accessible only to them. By logging in, users can personalize their experience and keep their tasks organized across different devices, maintaining productivity wherever they go.
+  
 ![Screenshot 2024-08-13 at 19 57 12](https://github.com/user-attachments/assets/a91f56de-132a-43b5-bd5b-d3a51609110f)
 
 ## Register Page: 
 - The register page invites new users to create an account, giving them access to all of To-Do-It’s features. This is the entrance to a more organized life, allowing users to start managing their tasks and priorities in a structured way.
+  
 ![Screenshot 2024-08-13 at 19 57 23](https://github.com/user-attachments/assets/52615ac9-f25e-42ef-8ec9-0380f521bfd2)
 
 ## Add To-Do: 
 - The core feature of To-Do-It is the ability to add new tasks. Users can give each task a title and description, choose a category, and assign a priority level. This feature helps users to break down their goals into manageable steps, categorize them for clarity, and prioritize them to ensure the most important tasks get done first.
+  
 ![Screenshot 2024-08-13 at 19 58 45](https://github.com/user-attachments/assets/23f7be7c-c260-4db5-b2da-8d0091f17ed4)
 ![Screenshot 2024-08-13 at 19 58 54](https://github.com/user-attachments/assets/498f2378-9099-423c-8238-caacdebe029e)
 ![Screenshot 2024-08-13 at 19 58 54](https://github.com/user-attachments/assets/bbfbb3fc-62ab-4680-b045-95654260270f)
