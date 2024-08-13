@@ -217,8 +217,14 @@ select:focus {
         width: 2.6rem;
         height: 2.6rem;
     }
-    h1, h3 {
+    h1 {
         font-size: 1rem;
+    }
+    h2 {
+        font-size: 0.8rem;
+    }
+    h3 {
+        font-size: 0.7;
     }
     
 }
