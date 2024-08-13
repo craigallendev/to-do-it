@@ -38,24 +38,38 @@
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        {% if request.user.is_authenticated %}
-                                <li class="nav-item">
-                                    <a class="btn" href="{% url 'task-create' %}">Add To-Do</a>
-                                </li>
-                            {% endif %}
+                        {% if not request.user.is_authenticated and not request.resolver_match.url_name == 'register' %}
+                            <li class="nav-item">
+                                <a class="btn" href="{% url 'register' %}">Register</a>
+                            </li>
+                        {% endif %}
                         {% if request.user.is_authenticated %}
                             <li class="nav-item">
-                            <a class="btn" href="{% url 'tasks' %}">To Do List</a>{% endif %}
+                                <a class="btn" href="{% url 'task-create' %}">Add To-Do</a>
+                            </li>
+                        {% endif %}
+                        {% if request.user.is_authenticated %}
+                            <li class="nav-item">
+                                <form method="POST" action="{% url 'logout' %}">
+                                    {% csrf_token %}
+                                    <button class="btn" href="#">Logout</button>
+                                </form>
+                            </li>
+                        {% endif %}
+                        {% if request.user.is_authenticated %}
+                            <li class="nav-item">
+                                <a class="btn" href="{% url 'tasks' %}">To Do List</a>
+                        {% endif %}
                         {% if not request.user.is_authenticated and not request.resolver_match.url_name == 'login' %}
                             <li class="nav-item">
                                 <a class="btn" href="{% url 'login' %}">Login</a>
                             </li>
                         {% endif %}
-                        </li>
-                        <li class="nav-item">{% if request.user.is_authenticated %}
-                            <form method="POST" action="{% url 'logout' %}">
-                                {% csrf_token %}
-                            <button class="btn" href="#">Logout</button></form>
+                            <li class="nav-item">{% if request.user.is_authenticated %}
+                                <form method="POST" action="{% url 'logout' %}">
+                                    {% csrf_token %}
+                                        <button class="btn" href="#">Logout</button>
+                                </form>
                             {% endif %}
                         </li>
                      </ul>

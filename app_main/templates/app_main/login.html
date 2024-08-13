@@ -11,7 +11,7 @@
     
     <!-- Login form -->
     <section>
-        <h2>Login</h2>
+        <h2>Login or Register</h2>
         <form method="POST">
             {% csrf_token %}
 
@@ -21,7 +21,7 @@
             <!-- Submit button -->
             <button type="submit" class="button">Login</button>
         </form>
-        
+
         <!-- Link to registration page for users who don’t have an account -->
         <p>Don't have an account? <a id="register-link" href="{% url 'register' %}">Register</a></p>
     </section>
