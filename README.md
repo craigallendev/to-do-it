@@ -40,7 +40,24 @@ The low-fidelity wireframes created in Figma played a crucial role in shaping th
 <img src="https://github.com/user-attachments/assets/fdb37801-ca3b-4864-ae7a-c508c5ad4f8e" width="400" height="auto" alt="Wireframe Screenshot 2" />
 <img src="https://github.com/user-attachments/assets/b897f948-826c-4cd7-966e-1de047847b25" width="400" height="auto" alt="Wireframe Screenshot 3" />
 
+## Entity-Relationship Diagram (ERD)
+The application is designed around two primary entities: User and Task. Below is a brief explanation of their relationship and how they interact within the Application.
 
+- User and Task Relationship
+The ERD illustrates a one-to-many relationship between the User and Task models:
+
+User (1) → Task (many): Each user can be associated with multiple tasks, but each task is linked to only one user. This relationship is implemented using a foreign key in the Task model, which references the User model. This allows tasks to be assigned to users while maintaining the flexibility for tasks to exist without a user assignment, as the foreign key can be null or blank.
+
+Key Entities:
+User:
+
+The User model represents the individuals who interact with the application. Each user has a unique ID, along with other attributes like username and password.
+Task:
+
+The Task model represents the tasks created by users. Each task has attributes such as title, description, completion status, category, priority, and a reference to the user it belongs to.
+This supports core functionality such as task creation, editing, assignment, and tracking, ensuring that the system is both flexible and easy to manage.
+
+![Screenshot 2024-08-14 at 08 32 06](https://github.com/user-attachments/assets/0be3d367-76e3-429c-a6bc-1e5aef9e3aa3)
 
 ## Features 
 
