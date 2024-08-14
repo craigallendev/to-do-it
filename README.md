@@ -112,7 +112,7 @@ This supports core functionality such as task creation, editing, assignment, and
 - 
 ## Technologies Used
 
-- Frontend: HTML, CSS, BootStrap, JavaScript, Django
+- Frontend: HTML, CSS, BootStrap, Django
   
 - Backend: Django, Python 
 
