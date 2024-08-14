@@ -102,7 +102,54 @@ The low-fidelity wireframes created in Figma played a crucial role in shaping th
 - Database: PostgreSQL
   
 - Hosting: Github and Heroku
-  
+
+## User Experience Design 
+- Our user experience design is centered around creating an intuitive and seamless interaction for our users. I believe that a well-crafted UX enhances user satisfaction.
+
+- Consistency and Familiarity:
+I focused on creating a consistent experience throughout the application. Common UI and familiar design elements are used to make the app easy to naviagte.
+
+- Accessibility:
+Ensuring my application is accessible to all users is a top priority. I adhered to the Web Content Accessibility Guidelines (WCAG) to provide an inclusive experience, including support for screen readers and sufficient color contrast.
+
+- Responsive Design:
+My application is designed to be fully responsive, offering a smooth and optimized experience across different devices and screen sizes. Whether accessed on a mobile phone, tablet, or desktop, the application adjusts seamlessly to the user’s environment.
+
+- Usability Testing
+Usability testing played a crucial role in refining the user experience. I conducted multiple rounds of testing with users to identify issues and gain insights. Feedback from these sessions was used to make informed design decisions, resulting in a more user-friendly application.
+
+-User Stories
+To ensure my design is closely aligned with user needs, I developed user stories that capture the motivations of my target audience. These user stories serve as the foundation for our design and development processes, providing clear and actionable insights into what users need to accomplish with our application.
+
+![Screenshot 2024-08-14 at 01 46 19](https://github.com/user-attachments/assets/9581d2df-ee46-4e44-9231-349206ef88d4)
+
+
+Example User Story:
+As a user, I can select a category for my task so that I can visualize what kind of task it is.
+Each user story is written in a format that highlights the user’s perspective, ensuring that every feature and design decision is focused on delivering value to the end-user.
+
+## MoSCoW Prioritization
+To effectively manage and prioritize the features and tasks during the design and development process, we employed the MoSCoW prioritization method. This helped us decide between essential and non-essential features.
+
+Must-Haves (M):
+These are the critical features that the application cannot function without. For example, the ability for users to create and manage tasks is a must-have feature.
+
+Should-Haves (S):
+Important features that should be included if possible, but the application can still function without them. An example might be the ability to sort tasks by custom categories.
+
+Could-Haves (C):
+Features that are desirable but not essential. These are typically included if time and resources permit. An example could be advanced filtering options for tasks.
+
+Won’t-Haves (W):
+Features that are agreed to be out of scope for the current iteration. These are often revisited in future updates. For example, creating a user profie where users can upload a profile picture.
+
+This method ensured that I focused on delivering the most useful features first, while still keeping track of potential upgrades for later development.
+
+![Screenshot 2024-08-14 at 01 44 01](https://github.com/user-attachments/assets/2ad34a45-90a9-449c-bf08-82ed848ffb9e)
+![Screenshot 2024-08-14 at 01 44 12](https://github.com/user-attachments/assets/8eaf71d4-a0e0-4c04-9862-de5c6c5d7901)
+![Screenshot 2024-08-14 at 01 44 19](https://github.com/user-attachments/assets/320130f4-feb4-4af8-b739-eedd8e241e66)
+![Screenshot 2024-08-14 at 01 50 14](https://github.com/user-attachments/assets/1d1c2cde-42d0-4ff8-b555-1694bb484477)
+
 ## Testing 
 
 ## Feature Testing
