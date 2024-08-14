@@ -1,9 +1,17 @@
 from django.urls import path
-from . views import TaskList, TaskDetail, TaskCreate, TaskUpdate, DeleteView, CustomLoginView, RegisterPage, ToggleTaskCompleteView
+from . views import (
+    TaskList,
+    TaskDetail,
+    TaskCreate,
+    TaskUpdate,
+    DeleteView,
+    CustomLoginView,
+    RegisterPage,
+    ToggleTaskCompleteView)
 from django.contrib.auth.views import LogoutView
 
 # Defines the URL patterns for the app
-urlpatterns = [ 
+urlpatterns = [
     path('login/', CustomLoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(next_page='login'), name='logout'),
     path('register/', RegisterPage.as_view(), name='register'),
@@ -12,5 +20,6 @@ urlpatterns = [
     path('task-create/', TaskCreate.as_view(), name='task-create'),
     path('task-update/<int:pk>/', TaskUpdate.as_view(), name='task-update'),
     path('task-delete/<int:pk>/', DeleteView.as_view(), name='task-delete'),
-    path('task-toggle-complete/<int:pk>/', ToggleTaskCompleteView.as_view(), name='task-toggle-complete'),
+    path('task-toggle-complete/<int:pk>/',
+         ToggleTaskCompleteView.as_view(), name='task-toggle-complete'),
 ]

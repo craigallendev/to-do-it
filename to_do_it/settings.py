@@ -14,7 +14,8 @@ from pathlib import Path
 import os
 import sys
 import dj_database_url
-if os.path.isfile("env.py"): import env
+if os.path.isfile("env.py"):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,10 +30,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-craigallendev-todoit-wxhmwidba89.ws.codeinstitute-ide.net', '.herokuapp.com']
+ALLOWED_HOSTS = [
+    '8000-craigallendev-todoit-wxhmwidba89.ws.codeinstitute-ide.net',
+    '.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-craigallendev-todoit-wxhmwidba89.ws.codeinstitute-ide.net', 'htttps://.herokuapp.com']
+    'https://8000-craigallendev-todoit-wxhmwidba89.ws.codeinstitute-ide.net',
+    'htttps://.herokuapp.com']
 
 
 # Application definition
@@ -63,7 +67,7 @@ ROOT_URLCONF = 'to_do_it.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates",],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,9 +93,9 @@ WSGI_APPLICATION = 'to_do_it.wsgi.application'
 #     }
 # }
 
-DATABASES = { 
-    'default': 
-dj_database_url.parse(os.environ.get("DATABASE_URL"))
+DATABASES = {
+    'default':
+    dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 if 'test' in sys.argv:
@@ -103,16 +107,20 @@ if 'test' in sys.argv:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+        'UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+        'MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+        'CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+        'NumericPasswordValidator',
     },
 ]
 
