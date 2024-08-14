@@ -150,6 +150,24 @@ This method ensured that I focused on delivering the most useful features first,
 ![Screenshot 2024-08-14 at 01 44 19](https://github.com/user-attachments/assets/320130f4-feb4-4af8-b739-eedd8e241e66)
 ![Screenshot 2024-08-14 at 01 50 14](https://github.com/user-attachments/assets/1d1c2cde-42d0-4ff8-b555-1694bb484477)
 
+## Agile
+- My development process follows Agile methodologies to ensure flexibility, continuous improvement, and rapid delivery of features. By adopting Agile, I am able to respond quickly to changes, continuously iterate on the product, and maintain a focus on delivering value to my users.
+
+- I work in short sprints to continuously develop and deliver new features.
+
+  
+- Throughout the development process, I gathered feedback from users. This feedback was used to make adjustments and improvements, ensuring the product evolved based on real user needs.
+
+## Project Management with GitHub Projects
+To manage my Agile process, I utilized GitHub Projects Kanban board. This tool helped me visualize and track the progress of my tasks and user stories throughout the development.
+
+- Kanban Board
+Our Kanban board is divided into columns such as To Do, In Progress, Done and Future Features. This structure allowed me to easily track the status of each task and prioritize work.
+![Screenshot 2024-08-14 at 01 19 43](https://github.com/user-attachments/assets/48af7ebd-55e3-4fc6-bb4e-bc7774aafb52)
+
+- User Stories and Tasks
+User stories and tasks are shown as cards on the Kanban board. Each card includes a description and acceptance criteria. Cards are moved across the board as they progress through the development stages.
+
 ## Testing 
 
 ## Feature Testing
