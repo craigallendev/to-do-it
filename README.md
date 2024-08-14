@@ -40,7 +40,24 @@ The low-fidelity wireframes created in Figma played a crucial role in shaping th
 <img src="https://github.com/user-attachments/assets/fdb37801-ca3b-4864-ae7a-c508c5ad4f8e" width="400" height="auto" alt="Wireframe Screenshot 2" />
 <img src="https://github.com/user-attachments/assets/b897f948-826c-4cd7-966e-1de047847b25" width="400" height="auto" alt="Wireframe Screenshot 3" />
 
+## Entity-Relationship Diagram (ERD)
+The application is designed around two primary entities: User and Task. Below is a brief explanation of their relationship and how they interact within the Application.
 
+- User and Task Relationship
+The ERD illustrates a one-to-many relationship between the User and Task models:
+
+User (1) → Task (many): Each user can be associated with multiple tasks, but each task is linked to only one user. This relationship is implemented using a foreign key in the Task model, which references the User model. This allows tasks to be assigned to users while maintaining the flexibility for tasks to exist without a user assignment, as the foreign key can be null or blank.
+
+Key Entities:
+User:
+
+The User model represents the individuals who interact with the application. Each user has a unique ID, along with other attributes like username and password.
+Task:
+
+The Task model represents the tasks created by users. Each task has attributes such as title, description, completion status, category, priority, and a reference to the user it belongs to.
+This supports core functionality such as task creation, editing, assignment, and tracking, ensuring that the system is both flexible and easy to manage.
+
+![Screenshot 2024-08-14 at 08 32 06](https://github.com/user-attachments/assets/0be3d367-76e3-429c-a6bc-1e5aef9e3aa3)
 
 ## Features 
 
@@ -102,7 +119,72 @@ The low-fidelity wireframes created in Figma played a crucial role in shaping th
 - Database: PostgreSQL
   
 - Hosting: Github and Heroku
+
+## User Experience Design 
+- Our user experience design is centered around creating an intuitive and seamless interaction for our users. I believe that a well-crafted UX enhances user satisfaction.
+
+- Consistency and Familiarity:
+I focused on creating a consistent experience throughout the application. Common UI and familiar design elements are used to make the app easy to naviagte.
+
+- Accessibility:
+Ensuring my application is accessible to all users is a top priority. I adhered to the Web Content Accessibility Guidelines (WCAG) to provide an inclusive experience, including support for screen readers and sufficient color contrast.
+
+- Responsive Design:
+My application is designed to be fully responsive, offering a smooth and optimized experience across different devices and screen sizes. Whether accessed on a mobile phone, tablet, or desktop, the application adjusts seamlessly to the user’s environment.
+
+- Usability Testing
+Usability testing played a crucial role in refining the user experience. I conducted multiple rounds of testing with users to identify issues and gain insights. Feedback from these sessions was used to make informed design decisions, resulting in a more user-friendly application.
+
+-User Stories
+To ensure my design is closely aligned with user needs, I developed user stories that capture the motivations of my target audience. These user stories serve as the foundation for our design and development processes, providing clear and actionable insights into what users need to accomplish with our application.
+
+![Screenshot 2024-08-14 at 01 46 19](https://github.com/user-attachments/assets/9581d2df-ee46-4e44-9231-349206ef88d4)
+
+
+Example User Story:
+As a user, I can select a category for my task so that I can visualize what kind of task it is.
+Each user story is written in a format that highlights the user’s perspective, ensuring that every feature and design decision is focused on delivering value to the end-user.
+
+## MoSCoW Prioritization
+To effectively manage and prioritize the features and tasks during the design and development process, we employed the MoSCoW prioritization method. This helped us decide between essential and non-essential features.
+
+Must-Haves (M):
+These are the critical features that the application cannot function without. For example, the ability for users to create and manage tasks is a must-have feature.
+
+Should-Haves (S):
+Important features that should be included if possible, but the application can still function without them. An example might be the ability to sort tasks by custom categories.
+
+Could-Haves (C):
+Features that are desirable but not essential. These are typically included if time and resources permit. An example could be advanced filtering options for tasks.
+
+Won’t-Haves (W):
+Features that are agreed to be out of scope for the current iteration. These are often revisited in future updates. For example, creating a user profie where users can upload a profile picture.
+
+This method ensured that I focused on delivering the most useful features first, while still keeping track of potential upgrades for later development.
+
+![Screenshot 2024-08-14 at 01 44 01](https://github.com/user-attachments/assets/2ad34a45-90a9-449c-bf08-82ed848ffb9e)
+![Screenshot 2024-08-14 at 01 44 12](https://github.com/user-attachments/assets/8eaf71d4-a0e0-4c04-9862-de5c6c5d7901)
+![Screenshot 2024-08-14 at 01 44 19](https://github.com/user-attachments/assets/320130f4-feb4-4af8-b739-eedd8e241e66)
+![Screenshot 2024-08-14 at 01 50 14](https://github.com/user-attachments/assets/1d1c2cde-42d0-4ff8-b555-1694bb484477)
+
+## Agile
+- My development process follows Agile methodologies to ensure flexibility, continuous improvement, and rapid delivery of features. By adopting Agile, I am able to respond quickly to changes, continuously iterate on the product, and maintain a focus on delivering value to my users.
+
+- I work in short sprints to continuously develop and deliver new features.
+
   
+- Throughout the development process, I gathered feedback from users. This feedback was used to make adjustments and improvements, ensuring the product evolved based on real user needs.
+
+## Project Management with GitHub Projects
+To manage my Agile process, I utilized GitHub Projects Kanban board. This tool helped me visualize and track the progress of my tasks and user stories throughout the development.
+
+- Kanban Board
+Our Kanban board is divided into columns such as To Do, In Progress, Done and Future Features. This structure allowed me to easily track the status of each task and prioritize work.
+![Screenshot 2024-08-14 at 01 19 43](https://github.com/user-attachments/assets/48af7ebd-55e3-4fc6-bb4e-bc7774aafb52)
+
+- User Stories and Tasks
+User stories and tasks are shown as cards on the Kanban board. Each card includes a description and acceptance criteria. Cards are moved across the board as they progress through the development stages.
+
 ## Testing 
 
 ## Feature Testing
@@ -157,23 +239,23 @@ To-Do-It has been tested across multiple browsers, including Chrome, Firefox, Sa
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-- A new repository was created on github
+- A new repository was created on github.
     
 ## Deployment to Heroku
 ### Create a Heroku Application:
 
 - Log in to your Heroku account.
 Click on the New button and select Create New App.
-Enter a unique name for your app and choose the region closest to your user base.
-Link GitHub Repository to Heroku:
+Enter a unique name for the app and choose the region closest to the user base.
+Link the GitHub Repository to Heroku:
 
 - In the Heroku dashboard for your app, go to the Deploy tab.
 Choose GitHub as the deployment method.
 Search for and connect your GitHub repository to Heroku.
 Deploy the Application:
 
-- Once your repository is linked, you can deploy your application by selecting the branch you want to deploy from and clicking Deploy Branch.
-Heroku will build and deploy your application, and you will see logs indicating the deployment process.
+- Once the repository is linked, you can deploy the application by selecting the branch you want to deploy from and clicking Deploy Branch.
+Heroku will build and deploy the application, and you will see logs indicating the deployment process.
 
 ### Verify Deployment:
 - After deployment, Heroku provides a URL where your application is live.
