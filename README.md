@@ -210,6 +210,7 @@ To-Do-It has been tested across multiple browsers, including Chrome, Firefox, Sa
 
 ## Testing Methodology
 - W3C Validation: Used the W3C HTML and CSS validation services to check for any syntax errors. All identified issues were corrected to ensure that the code is standards-compliant and error-free.
+- I also ran my python through https://pep8ci.herokuapp.com/#. All issues were fixed to meet code standards and made sure they are error free.
 
 <img src="https://github.com/user-attachments/assets/528b4468-a880-4647-a459-6004e43d9d2f" width="500" height="auto" alt="Testing Screenshot 1" />
 <img src="https://github.com/user-attachments/assets/33964809-053a-4cfa-a129-53cf9e6786c4" width="500" height="auto" alt="Testing Screenshot 2" />
@@ -235,6 +236,7 @@ To-Do-It has been tested across multiple browsers, including Chrome, Firefox, Sa
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - Python No erros were found when passing through (https://pep8ci.herokuapp.com/#) 
 
 ## Deployment
 
