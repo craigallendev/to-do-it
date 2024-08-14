@@ -222,23 +222,23 @@ To-Do-It has been tested across multiple browsers, including Chrome, Firefox, Sa
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-- A new repository was created on github
+- A new repository was created on github.
     
 ## Deployment to Heroku
 ### Create a Heroku Application:
 
 - Log in to your Heroku account.
 Click on the New button and select Create New App.
-Enter a unique name for your app and choose the region closest to your user base.
-Link GitHub Repository to Heroku:
+Enter a unique name for the app and choose the region closest to the user base.
+Link the GitHub Repository to Heroku:
 
 - In the Heroku dashboard for your app, go to the Deploy tab.
 Choose GitHub as the deployment method.
 Search for and connect your GitHub repository to Heroku.
 Deploy the Application:
 
-- Once your repository is linked, you can deploy your application by selecting the branch you want to deploy from and clicking Deploy Branch.
-Heroku will build and deploy your application, and you will see logs indicating the deployment process.
+- Once the repository is linked, you can deploy the application by selecting the branch you want to deploy from and clicking Deploy Branch.
+Heroku will build and deploy the application, and you will see logs indicating the deployment process.
 
 ### Verify Deployment:
 - After deployment, Heroku provides a URL where your application is live.
